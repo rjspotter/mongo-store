@@ -1,6 +1,6 @@
 = mongo-store
 
-Rack session store for mongoDB. See the docs[http://rdoc.info/projects/titanous/mongo-store] for more usage details.
+Rack session store for MongoDB. See the docs[http://rdoc.info/projects/titanous/mongo-store] for more usage details.
 
 == Installation
     gem install mongo-store
