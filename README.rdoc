@@ -1,6 +1,13 @@
 = mongo-store
 
-Rack session store for mongoDB
+Rack session store for mongoDB. See the docs[http://rdoc.info/projects/titanous/mongo-store] for more usage details.
+
+== Installation
+    gem install mongo-store
+
+== Usage
+    use Rack::Session::Mongo, :connection => @existing_mongodb_connection,
+                              :expire_after => 1800
 
 == Note on Patches/Pull Requests
  
