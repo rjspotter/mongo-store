@@ -6,7 +6,7 @@ module Rack
   module Session
     class Mongo < Abstract::ID
       attr_reader :mutex, :pool, :connection
-      DEFAULT_OPTIONS = Abstract::ID::DEFAULT_OPTIONS.merge :db => 'rack', :collection => 'rack-sessions'
+      DEFAULT_OPTIONS = Abstract::ID::DEFAULT_OPTIONS.merge :db => 'rack', :collection => 'sessions'
       
       def initialize(app, options = {})
         super
