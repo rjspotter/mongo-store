@@ -58,7 +58,7 @@ module Rack
         @mutex = Mutex.new
         @connection = @default_options[:connection] || ::Mongo::Connection.new
         @pool = @connection.db(@default_options[:db]).collection(@default_options[:collection])
-        @pool.create_index('sid', true)
+        @pool.create_index('sid', :unique => true)
       end
       
       def get_session(env, sid)

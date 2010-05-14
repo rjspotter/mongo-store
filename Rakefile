@@ -10,7 +10,7 @@ Jeweler::Tasks.new do |gem|
   gem.email = 'jonathan@titanous.com'
   gem.homepage = 'http://github.com/titanous/mongo-store'
   gem.authors = ['Jonathan Rudenberg']
-  gem.add_dependency 'mongo'
+  gem.add_dependency 'mongo', '>= 1.0.1'
   gem.add_dependency 'rack', '~> 1.1.0'
   gem.add_development_dependency 'rspec', '>= 1.2.9'
   gem.add_development_dependency 'yard', '>= 0'
